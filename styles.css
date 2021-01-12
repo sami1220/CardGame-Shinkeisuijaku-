@@ -1,0 +1,123 @@
+body {
+  background: #8ce5f5;
+}
+
+h1 {
+  font-size: 30px;
+  color: #fff;
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  color:rgb(255, 160, 125);
+  text-shadow:
+  2px  2px 2px #ffffff,
+  -2px  2px 2px #ffffff,
+   2px -2px 2px #ffffff,
+  -2px -2px 2px #ffffff,
+   2px  0px 2px #ffffff,
+   0px  2px 2px #ffffff,
+  -2px  0px 2px #ffffff,
+   0px -2px 2px #ffffff; 
+}
+
+.all-container {
+  width:90px;
+  height:120px;
+  perspective: 200px;
+  margin:5px;
+}
+
+#time {
+  text-shadow: #ffffff 2px 2px 2px;
+}
+
+#card-stage {
+  width:450px;
+  margin:30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  cursor: pointaer;
+  width:100%;
+  height:100%;
+  transition: 0.8s;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.card-front,
+.card-back {
+  width:100%;
+  height:100%;
+  background-image: url(cat.png);
+  background-size: cover;
+  background-position: center;
+  background-color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(39, 39, 39);
+  cursor: pointer;
+
+}
+
+.card-back {
+  background: url(118410.png)center center / cover no-repeat;
+  background-color: rgb(255, 160, 125);
+  line-height: 130px;
+  text-align: center;
+  font-size: 20px;
+  position: absolute;
+  top:0;
+}
+
+.card-front {
+  transform: rotateY(180deg);
+  position: absolute;
+  top:0;  
+}
+
+.card.open {
+  transform: rotateY(180deg);
+}
+
+.timer-title {
+  color: rgb(255, 88, 88);
+  font-size: 30px;
+  margin:0 auto;
+  width: 500px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: #ffffff 2px 2px 2px;
+}
+
+#restart {
+  display: block;
+  text-align: center;
+  margin:0 auto;
+  width: 300px;
+  height:40px;
+  line-height:40px;
+  border-radius: 10px;
+  background: rgb(255, 160, 125);
+  color: #fff;
+  font-size: 20px;
+  padding: 5 10px;
+  text-decoration: none;
+  /* position: relative; */
+  box-shadow: 1px 2px 1px rgb(95, 62, 0);
+  transition: 0.3s;
+}
+
+#restart::after,
+#restart:hover {
+  opacity: 0.8;
+  transform: translateY(1px);
+  box-shadow: none;
+
+}
